@@ -1,3 +1,6 @@
+.display-none {
+  display: none; }
+
 .main-section {
   background-image: url(./assets/home/background-home-mobile.jpg);
   width: 100%;
@@ -5,35 +8,98 @@
   background-size: cover;
   background-position: bottom;
   position: relative; }
-  .main-section .main--header nav {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 254px;
-    height: 100%;
-    backdrop-filter: blur(10px);
-    background: rgba(11, 13, 23, 0.15);
-    text-align: right;
-    padding: 32px 0px 0px 32px;
-    box-sizing: border-box; }
-    .main-section .main--header nav .close-btn {
-      padding-right: 24px;
+  .main-section .main--header {
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .main-section .main--header .main-navigation {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 254px;
+      height: 100%;
+      backdrop-filter: blur(10px);
+      background: rgba(11, 13, 23, 0.15);
+      text-align: right;
+      padding: 32px 0px 0px 32px;
       box-sizing: border-box; }
-    .main-section .main--header nav ul {
-      text-align: left;
-      margin-top: 48px; }
-      .main-section .main--header nav ul li {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 32px; }
-        .main-section .main--header nav ul li:last-child {
-          margin: 0; }
-        .main-section .main--header nav ul li a {
-          color: white;
-          text-transform: uppercase; }
-        .main-section .main--header nav ul li .li--line {
-          width: 3px;
-          height: 20px;
-          background-color: white;
-          display: block; }
+      .main-section .main--header .main-navigation .close-btn {
+        padding-right: 24px;
+        box-sizing: border-box; }
+      .main-section .main--header .main-navigation ul {
+        text-align: left;
+        margin-top: 48px; }
+        .main-section .main--header .main-navigation ul li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 32px; }
+          .main-section .main--header .main-navigation ul li:last-child {
+            margin: 0; }
+          .main-section .main--header .main-navigation ul li a {
+            color: white;
+            text-transform: uppercase; }
+          .main-section .main--header .main-navigation ul li .li--line {
+            width: 3px;
+            height: 20px;
+            background-color: white;
+            display: block; }
+    .main-section .main--header .navigatin-buttons--div button {
+      background: none;
+      border: none;
+      outline: none;
+      padding: 0;
+      cursor: pointer; }
+  .main-section .home-page {
+    padding: 24px;
+    box-sizing: border-box;
+    color: #D0D6F9; }
+    .main-section .home-page hgroup {
+      text-align: center;
+      font-family: "Bellefair", serif; }
+      .main-section .home-page hgroup h1 span {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 2.4px;
+        display: block;
+        margin-bottom: 24px; }
+      .main-section .home-page hgroup h1 strong {
+        font-size: 80px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 24px; }
+      .main-section .home-page hgroup p {
+        font-family: "Barlow", serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 27px; }
+    .main-section .home-page .explor-button--div {
+      margin: auto;
+      margin-top: 60px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .main-section .home-page .explor-button--div .explor-btn {
+        background: none;
+        border: none;
+        outline: none;
+        padding: 0;
+        cursor: pointer;
+        width: 144px;
+        height: 144px;
+        border-radius: 50%;
+        background-color: #FFF;
+        text-transform: uppercase;
+        font-family: "Bellefair", serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #0B0D17;
+        letter-spacing: 3px;
+        cursor: pointer; }

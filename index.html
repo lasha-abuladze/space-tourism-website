@@ -7,7 +7,23 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 
-    <title>Document</title>
+    <!-- font-family: "Barlow Condensed", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- font-family: "Bellefair", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+    
+
+    <!-- font-family: "Barlow", serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <title>Home</title>
 </head>
 <body>
 
@@ -18,11 +34,11 @@
 
             <img src="./assets/shared/logo.svg" alt="logo">
 
-            <nav>
+            <nav class="main-navigation display-none">
 
-                <div class="close-btn">
+                <!-- <div class="close-btn">
                     <button>x</button>
-                </div>
+                </div> -->
 
                 <ul>
                     <li>
@@ -65,11 +81,45 @@
 
             </nav>
 
+            <div class="navigatin-buttons--div">
+                <button class="btn-closeMenu display-none">
+                    <img src="./assets/shared/icon-close.svg" alt="icon-close">
+                </button>
 
+                <button class="btn-openMenu">
+                    <img src="./assets/shared/icon-hamburger.svg" alt="icon-humburger">
+                </button>
+            </div>
 
         </header>
 
-         
+        <section class="home-page">
+
+            <hgroup>
+
+                <h1>
+                    <span>SO, YOU WANT TO TRAVEL TO</span>
+                    <strong>space</strong>
+                </h1>
+
+                <p>
+                    Let’s face it; if you want to go to space, 
+                    you might as well genuinely go to outer space 
+                    and not hover kind of on the edge of it. Well 
+                    sit back, and relax because we’ll give you a 
+                    truly out of this world experience!
+                </p>
+                
+            </hgroup>
+
+            <div class="explor-button--div">
+                <button class="explor-btn">
+                    explor
+                </button>
+            </div>
+
+        </section>
+            
 
 
     </main>
