@@ -26,6 +26,7 @@
     background-position: bottom;
 
     position: relative;
+    overflow: hidden;
 
 
     .main--header {
@@ -36,8 +37,19 @@
         align-items: center;
         justify-content: space-between;
 
+        button {
+            @include btnGen();
+            width: 35px;
+            height: 35px;
+        }
+
+
+        .main-navigation--hidden {
+            transform: translateX(100%);
+        }
 
         .main-navigation {
+            transition: all 0.4s;
             position: absolute;
             right: 0;
             top: 0;
@@ -50,8 +62,7 @@
             box-sizing: border-box;
 
             .close-btn {
-                padding-right: 24px;
-                box-sizing: border-box;
+                margin-right: 24px;
             }
 
             ul {
@@ -85,15 +96,16 @@
             }
 
         }
+
         
 
-        .navigatin-buttons--div {
+        // .navigatin-buttons--div {
             
-            button {
-                @include btnGen();
-                // background-color: red;
-            }
-        }
+        //     button {
+        //         @include btnGen();
+        //         // background-color: red;
+        //     }
+        // }
     }
 
 
@@ -134,19 +146,22 @@
 
         
 
+        .explor-button--div-hover {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.3);
+            transition: all 0.6s;
+        }
+
         .explor-button--div {
             margin: auto;
             margin-top: 60px;
             width: 300px;
             height: 300px;
             border-radius: 50%;
-            // background: radial-gradient(circle, rgba(255, 255, 255, 1),
-            // rgba(255, 255, 255, 0.1));
-            background: rgba(255, 255, 255, 0.3);
-            box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.3);
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all 0.6s;
 
             .explor-btn {
                 @include btnGen();

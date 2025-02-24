@@ -7,14 +7,26 @@
   height: 100vh;
   background-size: cover;
   background-position: bottom;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .main-section .main--header {
     padding: 24px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    .main-section .main--header button {
+      background: none;
+      border: none;
+      outline: none;
+      padding: 0;
+      cursor: pointer;
+      width: 35px;
+      height: 35px; }
+    .main-section .main--header .main-navigation--hidden {
+      transform: translateX(100%); }
     .main-section .main--header .main-navigation {
+      transition: all 0.4s;
       position: absolute;
       right: 0;
       top: 0;
@@ -26,8 +38,7 @@
       padding: 32px 0px 0px 32px;
       box-sizing: border-box; }
       .main-section .main--header .main-navigation .close-btn {
-        padding-right: 24px;
-        box-sizing: border-box; }
+        margin-right: 24px; }
       .main-section .main--header .main-navigation ul {
         text-align: left;
         margin-top: 48px; }
@@ -46,12 +57,6 @@
             height: 20px;
             background-color: white;
             display: block; }
-    .main-section .main--header .navigatin-buttons--div button {
-      background: none;
-      border: none;
-      outline: none;
-      padding: 0;
-      cursor: pointer; }
   .main-section .home-page {
     padding: 24px;
     box-sizing: border-box;
@@ -75,17 +80,20 @@
         font-size: 15px;
         font-weight: 400;
         line-height: 27px; }
+    .main-section .home-page .explor-button--div-hover {
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.3);
+      transition: all 0.6s; }
     .main-section .home-page .explor-button--div {
       margin: auto;
       margin-top: 60px;
       width: 300px;
       height: 300px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.3);
-      box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.3);
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      transition: all 0.6s; }
       .main-section .home-page .explor-button--div .explor-btn {
         background: none;
         border: none;
