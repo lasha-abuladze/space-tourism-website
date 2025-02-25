@@ -224,20 +224,34 @@
         li {
             padding-bottom: 20px;
             box-sizing: border-box;
+            position: relative;
 
-            a {
+            .planet-inp {
+                position: absolute;
+                z-index: -1;
+                visibility: hidden;
+                display: none;
+            }
+
+            .planet-inp--label {
+                transition-property: color;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-in-out;
+                padding-bottom: 20px;
+                box-sizing: border-box;
+
+                font-size: 14px;
+                font-weight: 400;
                 color: #D0D6F9;
+                font-family: "Barlow Condensed", serif;
                 letter-spacing: 2px;
-                cursor: pointer;
             }
 
-            &:first-child {
-                border-bottom: 2px solid #FFF;
-
-                a {
-                    color: #FFF;
-                }
+            .planet-inp:checked + .planet-inp--label {
+                color: #fff;
+                border-bottom: 2px solid #fff;
             }
+
         }
 
     }

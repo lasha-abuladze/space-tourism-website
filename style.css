@@ -142,15 +142,27 @@
     text-transform: uppercase; }
     .pick-your-destination--section .planet--list li {
       padding-bottom: 20px;
-      box-sizing: border-box; }
-      .pick-your-destination--section .planet--list li a {
+      box-sizing: border-box;
+      position: relative; }
+      .pick-your-destination--section .planet--list li .planet-inp {
+        position: absolute;
+        z-index: -1;
+        visibility: hidden;
+        display: none; }
+      .pick-your-destination--section .planet--list li .planet-inp--label {
+        transition-property: color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 400;
         color: #D0D6F9;
-        letter-spacing: 2px;
-        cursor: pointer; }
-      .pick-your-destination--section .planet--list li:first-child {
-        border-bottom: 2px solid #FFF; }
-        .pick-your-destination--section .planet--list li:first-child a {
-          color: #FFF; }
+        font-family: "Barlow Condensed", serif;
+        letter-spacing: 2px; }
+      .pick-your-destination--section .planet--list li .planet-inp:checked + .planet-inp--label {
+        color: #fff;
+        border-bottom: 2px solid #fff; }
   .pick-your-destination--section hgroup h2 {
     margin-bottom: 30px;
     text-transform: uppercase;

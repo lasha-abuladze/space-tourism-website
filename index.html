@@ -124,14 +124,37 @@
                 <img src="./assets/destination/image-moon.png" alt="moon">
             </header>
 
+            <!-- <ul class="planet--list">
+                <li class="planet-name--li"><a href="#">moon</a></li>
+                <li class="planet-name--li"><a href="#">mars</a></li>
+                <li class="planet-name--li"><a href="#">europe</a></li>
+                <li class="planet-name--li"><a href="#">titan</a></li>
+            </ul> -->
+
             <ul class="planet--list">
-                <li><a href="#">moon</a></li>
-                <li><a href="#">mars</a></li>
-                <li><a href="#">europe</a></li>
-                <li><a href="#">titan</a></li>
+
+                <li>
+                    <input class="planet-inp" type="radio" id="radioInp-moon" name="planet">
+                    <label class="planet-inp--label" for="radioInp-moon">moon</label>
+                </li>
+
+                <li>
+                    <input class="planet-inp" type="radio" id="radioInp-mars" name="planet">
+                    <label class="planet-inp--label" for="radioInp-mars">mars</label>
+                </li>
+
+                <li>
+                    <input class="planet-inp" type="radio" id="radioInp-europe" name="planet">
+                    <label class="planet-inp--label" for="radioInp-europe">europe</label>
+                </li>
+
+                <li>
+                    <input class="planet-inp" type="radio" id="radioInp-titan" name="planet">
+                    <label class="planet-inp--label" for="radioInp-titan">titan</label>
+                </li>
             </ul>
 
-            <hgroup>
+            <hgroup class="planets-hgroup">
 
                 <h2>moon</h2>
 
@@ -170,7 +193,7 @@
     </main>
 
 
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
     
 </body>
 </html>
